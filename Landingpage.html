@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<head>
+    <title>Awesome Landing Page</title>
+    <style type="text/css">
+        *{padding: 0; margin:0; box-sizing: border-box;}
+        header{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)), url('pexels-muffin-2468773.jpg');
+            background-size: Cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 85px;
+            background-color: rgb(185, 205, 243);
+            color:black;
+            display: flex;
+            justify-content: space-around;
+             align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;  
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 0%;
+            height:100%;
+            border-bottom: 2px solid red;
+            border-width: 3px;
+            transition:0.4s linear;
+        }
+         .menu a:hover:before{
+            width: 95%;
+        }
+        .register a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding: 10px 20px;
+            background-color: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+            border-width: 3px;
+        }
+        .h-text{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .h-text span{
+            letter-spacing: 5px;
+        }
+        .h-text{
+            font-size: 2.5em;
+        }
+        .h-text a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            padding: 10px 20px;
+            background-color: indianred;
+           letter-spacing: 1px;
+           transition: 0.4s;
+        }
+        .h-text a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+            border-width: 3px;
+        }
+        footer {
+        display: flex;
+        background-color: black;
+        }
+        .footerLeft {
+        flex: 2;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        }
+
+        .fMenuTitle {
+        font-size: 16px;
+        color: white;
+        }
+
+        .fList {
+        margin-top: 10px;
+        padding: 0;
+        list-style: none;
+        }
+
+        .fListItem {
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: gray;
+        cursor: pointer;
+        }
+
+        .footerRight {
+        flex: 1;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+
+        .fInput {
+        padding: 5px;
+        }
+
+        .fButton {
+        padding: 5px;
+        margin-top: 10px;
+        background-color: white;
+        color: black;
+        }
+
+        .fIcons{
+        display: flex;
+        }
+
+        .fIcon{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        }
+
+        .copyright{
+        font-weight: 300;
+        font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Alizad-Travel 
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Hill Statons</a>
+                <a href="#">Best Offer's</a>
+                <a href="#">Our Sites</a>
+                <a href="#">Contect</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <span>Enjoy</span>
+            <h1>Interational Travel Agency</h1>
+            <!-- <br> -->
+            <a href="#">Book Your Trips</a>    
+        </section>
+    </header>
+    <!-- footer -->
+<!-- === footer Starts ===   -->
+<footer>
+    <div class="footerLeft">
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">About Us</h1>
+            <ul class="fList">
+                <li class="fListItem">Scenic Beauty</li>
+                <li class="fListItem">Climate</li>
+                <li class="fListItem">Tourist Attractions</li>
+                <li class="fListItem">Adventure Sports</li>
+                <li class="fListItem">Colonial Influence</li>
+                <li class="fListItem">Cultural Diversity</li>
+                <li class="fListItem">Wildlife</li>
+                <li class="fListItem">Religious Significance</li>
+                <li class="fListItem">Economic Impact</li>
+                <li class="fListItem">Environmental Concerns</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Hill Stations</h1>
+            <ul class="fList">
+                <li class="fListItem">Darjeeling, India</li>
+                <li class="fListItem">Shimla, India</li>
+                <li class="fListItem">Ooty (Ootacamund), India</li>
+                <li class="fListItem">Munnar, India</li>
+                <li class="fListItem">Nuwara Eliya, Sri Lanka</li>
+                <li class="fListItem">Sapa, Vietnam</li>
+                <li class="fListItem">Cameron Highlands, Malaysia</li>
+                <li class="fListItem">Banff, Canada</li>
+                <li class="fListItem">Queenstown, New Zealand</li>
+                <li class="fListItem">Zermatt, Switzerland</li>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Our Sites</h1>
+            <ul class="fList">
+                <li class="fListItem">The Mall Road,Shimla,India</li>
+                <li class="fListItem">Nilgiri Mountain Railway,Ooty,India</li>
+                <li class="fListItem">Tea Gardens of Munnar,India</li>
+                <li class="fListItem">Batasia Loop,Darjeeling,India</li>
+                <li class="fListItem">Victoria Park,Nuwara Eliya,Sri Lanka</li>
+                <li class="fListItem">ansipan Peak,Sapa,Vietnam</li>
+                <li class="fListItem">Mossy Forest,Cameron Highlands,Malaysia</li>
+                <li class="fListItem">Sulphur Mountain,Banff,Canada</li>
+                <li class="fListItem">Skyline Gondola,Queenstown,New Zealand</li>
+                <li class="fListItem">BGornergrat Railway,Zermatt,Switzerland</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerRight">
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+            <div class="fMail">
+                <input type="text" placeholder="your@email.com" class="fInput">
+                <br/>
+                <button class="fButton">Join!</button>
+            </div>
+        </div>
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Follow Us</h1>
+            <div class="fIcons">
+                <a href="https://www.facebook.com/gautamdangers.kings?mibextid=2JQ9oc"><img src="facebook.png"
+                        alt="" class="fIcon"></a>
+                <a href="https://www.twitter.com"><img src="twitter.png" alt="" class="fIcon"></a>
+                <a href="https://www.instagram.com/alizad_sheikh?igsh=YndtNGZxeW1ibnlu"><img src="instagram.png"
+                        alt="" class="fIcon"></a>
+                <a href="https://wa.me/qr/HYXT5IEUBLP2H1"><img src="whatsapp.png" alt="" class="fIcon"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
